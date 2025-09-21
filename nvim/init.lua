@@ -34,3 +34,13 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
     end
   end,
 })
+
+-- Set tabs to be 4 spaces
+vim.opt.tabstop=4
+vim.opt.shiftwidth=4
+vim.opt.expandtab = true
+vim.opt.softtabstop=4
+
+
+require('populate_header')
+
