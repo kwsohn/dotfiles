@@ -6,15 +6,8 @@ return {
     },
     build = "make tiktoken",
     opts = {
-      model = "gpt-4.1",
-      --model = 'Claude-Sonnet-4',
+      model = "gpt-5.2",
       prompts = {
-        SourceHdr = {
-          prompt = '#buffer:current\nGenerate empty function definitions for the class declaration',
-          system_prompt = '',
-          --mapping = '<leader>ccmc',
-          --description = 'My custom prompt description',
-        },
       },
     },
     config = function(_, opts)
